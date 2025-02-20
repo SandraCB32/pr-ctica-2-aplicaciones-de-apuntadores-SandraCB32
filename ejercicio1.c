@@ -3,11 +3,11 @@
 int main () {
   char *ap, c, d, e;
   c = 'x';
-  d = 'z';
+  d = 'z';£
   e = '\t';
   
   //Escrib el código para imprimir las direcciones de a, b y c
-
+  printf("%p\n %p\n %p\n", &c, &d, &e);
   ap = &c;
   // imprime el carácter de la localidad a la que apunta
   printf("Carácter: %c\n",*ap);
