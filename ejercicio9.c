@@ -3,11 +3,18 @@
 
 int sumaArreglo(int *arr, int tamaño) {
     // Implementar la suma aquí
-    return 0;
+    int suma = 0;
+    for (int i = 0; i < tamaño; i++) {
+        suma += *(arr + i); // O también arr[i]
+    }
+    return suma;
 }
 
 int main() {
     int numeros[] = {1, 2, 3, 4, 5};
     // Código para calcular y mostrar la suma
+    int tamaño = sizeof(numeros) / sizeof(numeros[0]); // Calcula el tamaño del array
+    int resultado = sumaArreglo(numeros, tamaño);
+    printf("La suma de los elementos del arreglo es: %d\n", resultado);
     return 0;
 }

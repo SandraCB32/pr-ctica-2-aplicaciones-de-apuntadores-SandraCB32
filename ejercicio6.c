@@ -24,5 +24,11 @@ int main() {
     printf("Cadena original: %s\n", cadena);
     invertirCadena(cadena);
     printf("Cadena invertida: %s\n", cadena);
+
+    // Prueba con otra cadena
+    char cadena2[] = "Sandra";
+    printf("Cadena original: %s\n", cadena2);
+    invertirCadena(cadena2);
+    printf("Cadena invertida: %s\n", cadena2);
     return 0;
 }
